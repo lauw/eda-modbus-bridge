@@ -273,6 +273,13 @@ export const getSettings = async (modbusClient: ModbusRTU): Promise<Settings> =>
         'exhaustFanOverPressure': result.data[1],
     }
 
+    // Current ventilation level (user-settable)
+    result = await mutex.runExclusive(async () => tryReadHoldingRegisters(modbusClient, 53, 1))
+    settings = {
+        ...settings,
+        'ventilationLevel': result.data[0],
+    }
+
     return settings as Settings
 }
 

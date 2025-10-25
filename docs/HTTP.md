@@ -60,7 +60,8 @@ Returns a JSON object like this:
     "awayCoolingAllowed": true,
     "awayHeatingAllowed": false,
     "longAwayCoolingAllowed": true,
-    "longAwayHeatingAllowed": false
+    "longAwayHeatingAllowed": false,
+    "ventilationLevel": 30,
   },
   "deviceInformation": {
     "softwareVersion": 2.17,

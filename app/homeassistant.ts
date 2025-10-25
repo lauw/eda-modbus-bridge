@@ -280,6 +280,11 @@ export const configureMqttDiscovery = async (modbusClient: ModbusRTU, mqttClient
                 'unit_of_measurement': '%',
             }
         ),
+        'ventilationLevel': createNumberConfiguration(configurationBase, 'ventilationLevel', 'Ventilation level', {
+            min: 20,
+            max: 100,
+            unit_of_measurement: '%',
+        }),
     }
 
     // Configurable switches

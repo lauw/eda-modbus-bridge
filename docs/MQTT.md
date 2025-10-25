@@ -56,6 +56,7 @@ eda/settings/longAwayVentilationLevel
 eda/settings/overPressureDelay
 eda/settings/temperatureTarget
 eda/settings/defrostingAllowed
+eda/settings/ventilationLevel
 eda/status
 ```
 
